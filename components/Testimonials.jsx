@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const TESTIMONIALS = [
   {
     quote:
-      "We went from lost garments every week to zero mix-ups in six months. Customers noticed before we did.",
-    name: "Rohit Malhotra",
-    role: "Owner, PressPoint — Delhi",
+      "My husband's shirts have never looked this crisp. Pickup on time, delivery on time — every single week.",
+    name: "Priya Agrawal",
+    role: "Avanti Vihar, Raipur",
   },
   {
     quote:
-      "Three outlets, one dashboard. I check my daily settlement from home while the drums are still spinning.",
-    name: "Sneha Kulkarni",
-    role: "Founder, Aqua Laundry Co. — Pune",
+      "Gave them my wedding lehenga for dry cleaning with real fear. It came back looking better than the trial day.",
+    name: "Shruti Verma",
+    role: "Shankar Nagar, Raipur",
   },
   {
     quote:
-      "The premium feel of the customer updates alone justified the price. We raised our rates 20% after switching.",
-    name: "Arjun Reddy",
-    role: "Director, White Collar Dry Cleaners — Hyderabad",
+      "Free pickup and delivery actually means free — no minimum order drama. The 24-hour express has saved me twice.",
+    name: "Ankit Sahu",
+    role: "Devendra Nagar, Raipur",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function Testimonials() {
         >
           <p className="kicker mb-4">Testimonials</p>
           <h2 className="font-display text-4xl md:text-6xl">
-            Loved by owners who <span className="text-gradient">sweat the details.</span>
+            Loved by Raipur, <span className="text-gradient">one garment at a time.</span>
           </h2>
         </motion.div>
 

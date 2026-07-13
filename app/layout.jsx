@@ -14,20 +14,21 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "LaundryFlow — Premium Cloud Laundry Management Software",
+  title: "Dhobi Housz — Premium Laundry & Dry Cleaning in Raipur",
   description:
-    "LaundryFlow is a premium cloud-based laundry management platform: order tracking, services, smart billing and reports for modern laundry businesses.",
+    "Dhobi Housz is Raipur's premium laundry & dry cleaning service — wash & fold, dry cleaning, steam ironing with free home pickup and delivery. Shop No 3, Raheja Residency, Avanti Vihar, Raipur. Call 7354003303.",
   keywords: [
-    "laundry management software",
-    "laundry POS",
-    "dry cleaning software",
-    "laundry billing",
-    "laundry services",
+    "laundry Raipur",
+    "dry cleaning Raipur",
+    "premium laundry service",
+    "laundry pickup and delivery Raipur",
+    "steam ironing Raipur",
+    "Dhobi Housz",
   ],
   openGraph: {
-    title: "LaundryFlow — Premium Cloud Laundry Management Software",
+    title: "Dhobi Housz — Premium Laundry & Dry Cleaning in Raipur",
     description:
-      "From washing machine to luxury laundry empire. Services, orders, billing and reports in one cinematic platform.",
+      "From washing machine to luxury laundry. Free home pickup & delivery across Raipur. Call 7354003303.",
     type: "website",
   },
 };

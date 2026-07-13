@@ -54,8 +54,8 @@ export default function Services() {
             Every garment, <span className="text-gold italic">handled beautifully.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-[var(--ink-dim)]">
-            The full menu your customers expect from a luxury laundry — powered
-            end-to-end by LaundryFlow.
+            The full menu of premium garment care — with free home pickup and
+            delivery across Raipur.
           </p>
         </motion.div>
 

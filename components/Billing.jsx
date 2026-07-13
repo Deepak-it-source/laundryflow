@@ -4,27 +4,27 @@ import { motion } from "framer-motion";
 
 const PLANS = [
   {
-    name: "Single Store",
-    price: "₹1,499",
-    period: "/month",
-    tagline: "For the neighbourhood favourite",
-    features: ["1 outlet", "Unlimited orders", "WhatsApp updates", "GST invoicing", "Basic analytics"],
+    name: "Wash & Fold",
+    price: "₹79",
+    period: "/kg",
+    tagline: "Everyday laundry, done beautifully",
+    features: ["Washed, dried & folded", "Fabric-safe detergents", "Free pickup & delivery", "48-hour turnaround", "Fragrance on request"],
     featured: false,
   },
   {
-    name: "Growth",
-    price: "₹3,999",
-    period: "/month",
-    tagline: "For chains on the rise",
-    features: ["Up to 5 outlets", "Rider app & live tracking", "WhatsApp API automation", "Advanced analytics", "Staff & shift management", "Priority support"],
+    name: "Wash & Iron",
+    price: "₹99",
+    period: "/kg",
+    tagline: "Fresh, pressed & ready to wear",
+    features: ["Everything in Wash & Fold", "Steam-pressed finishing", "Knife-edge creases", "Hung or folded — your choice", "24-hour express available"],
     featured: true,
   },
   {
-    name: "Empire",
-    price: "Custom",
-    period: "",
-    tagline: "For luxury laundry brands",
-    features: ["Unlimited outlets", "White-label customer app", "Dedicated success manager", "Custom integrations", "SLA & onboarding"],
+    name: "Dry Cleaning",
+    price: "₹149",
+    period: "onwards",
+    tagline: "For suits, sarees & delicates",
+    features: ["Solvent-safe garment care", "Stain treatment included", "Breathable garment covers", "Wedding-wear specialists", "Shoe, bag & carpet care"],
     featured: false,
   },
 ];
@@ -40,13 +40,13 @@ export default function Billing() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 text-center"
         >
-          <p className="kicker mb-4">Billing</p>
+          <p className="kicker mb-4">Pricing</p>
           <h2 className="font-display text-4xl md:text-6xl">
             Pricing as <span className="text-gold italic">clean</span> as your linen.
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-[var(--ink-dim)]">
-            GST-ready invoices, UPI / card / cash reconciliation, and plans that
-            scale from one drum to a hundred.
+            Transparent rates, no hidden charges — and pickup &amp; delivery is
+            always free across Raipur.
           </p>
         </motion.div>
 
@@ -86,14 +86,14 @@ export default function Billing() {
                 ))}
               </ul>
               <a
-                href="#cta"
+                href="#contact"
                 className={`mt-8 block rounded-full py-3 text-center text-sm font-semibold transition ${
                   p.featured
                     ? "bg-white text-black hover:bg-[var(--accent)]"
                     : "glass hover:border-white/25"
                 }`}
               >
-                {p.price === "Custom" ? "Talk to Sales" : "Choose Plan"}
+                Book Pickup
               </a>
             </motion.div>
           ))}

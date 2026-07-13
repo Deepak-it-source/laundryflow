@@ -4,10 +4,10 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const STATS = [
-  { value: "500+", label: "Laundry stores" },
-  { value: "12L+", label: "Garments processed" },
-  { value: "28", label: "Cities served" },
-  { value: "4.9★", label: "Owner rating" },
+  { value: "5,000+", label: "Happy customers" },
+  { value: "50K+", label: "Garments cared for" },
+  { value: "24hr", label: "Express turnaround" },
+  { value: "4.9★", label: "Customer rating" },
 ];
 
 export default function About() {
@@ -30,15 +30,15 @@ export default function About() {
               From one drum to a <span className="text-gradient">luxury brand.</span>
             </h2>
             <p className="mt-6 leading-relaxed text-[var(--ink-dim)]">
-              LaundryFlow was born inside a real laundry — between steam presses,
-              missed pickups and handwritten ledgers. We turned that chaos into
-              software that runs the counter, the floor and the books, so owners
-              can focus on what matters: immaculate garments and happy customers.
+              Dhobi Housz is Raipur&apos;s premium laundry and dry cleaning
+              house — built on steam presses, fabric-safe chemistry and an
+              obsession with detail. Every garment is tagged, tracked and
+              finished to boutique standards before it comes home to you.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--ink-dim)]">
-              Today, hundreds of stores across India run their entire operation
-              on LaundryFlow — from neighbourhood favourites to premium
-              dry-clean chains.
+              From everyday wash &amp; fold to wedding lehengas and business
+              suits — we treat your wardrobe the way luxury hotels treat their
+              linen. With free home pickup and delivery across Raipur.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
@@ -66,14 +66,14 @@ export default function About() {
           >
             <motion.img
               src="/frames/frame_040.jpg"
-              alt="Inside a LaundryFlow-powered store"
+              alt="Inside the Dhobi Housz store"
               style={{ y: imgY }}
               className="absolute inset-[-10%] h-[120%] w-[110%] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 p-7">
-              <div className="font-display text-xl">Built inside real laundries</div>
-              <p className="mt-1 text-sm text-[var(--ink-dim)]">Not a boardroom. A shop floor.</p>
+              <div className="font-display text-xl">Dhobi Housz, Avanti Vihar</div>
+              <p className="mt-1 text-sm text-[var(--ink-dim)]">Shop No 3, Raheja Residency, Raipur.</p>
             </div>
           </motion.div>
         </div>

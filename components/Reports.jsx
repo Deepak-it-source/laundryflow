@@ -8,10 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Horizontal pinned gallery — cards reuse frames from the uploaded sequence.
 const CARDS = [
-  { frame: "/frames/frame_012.jpg", title: "Daily Settlement", desc: "Cash, UPI and card totals tallied against orders — variance flagged before close." },
-  { frame: "/frames/frame_030.jpg", title: "Branch P&L", desc: "Per-outlet revenue, costs and contribution margin, exportable to Excel & Tally." },
-  { frame: "/frames/frame_048.jpg", title: "Customer Cohorts", desc: "Retention curves and lifetime value by acquisition month and service type." },
-  { frame: "/frames/frame_071.jpg", title: "GST & Compliance", desc: "GSTR-ready summaries and e-invoice trails generated automatically." },
+  { frame: "/frames/frame_012.jpg", title: "Pickup & Tagging", desc: "We collect from your doorstep and tag every garment — a full custody trail from day one." },
+  { frame: "/frames/frame_030.jpg", title: "Wash & Care", desc: "Fabric-matched cycles, pH-balanced detergents and solvent-safe dry cleaning." },
+  { frame: "/frames/frame_048.jpg", title: "Steam Finishing", desc: "Boutique-grade pressing — crisp collars, knife-edge creases, perfect pleats." },
+  { frame: "/frames/frame_071.jpg", title: "Doorstep Delivery", desc: "Folded or hung in breathable covers, delivered back fresh — right on schedule." },
 ];
 
 export default function Reports() {
@@ -42,9 +42,9 @@ export default function Reports() {
   return (
     <section ref={sectionRef} id="reports" className="relative h-screen overflow-hidden">
       <div className="absolute left-6 top-16 z-10 md:left-24 md:top-24">
-        <p className="kicker mb-3">Reports</p>
+        <p className="kicker mb-3">Our Process</p>
         <h2 className="font-display text-3xl md:text-5xl">
-          Boardroom-grade <span className="text-gradient">reporting.</span>
+          From pickup to <span className="text-gradient">perfection.</span>
         </h2>
       </div>
 
@@ -69,8 +69,8 @@ export default function Reports() {
         ))}
         <div className="flex h-[52vh] w-[60vw] shrink-0 items-center justify-center sm:w-[30vw]">
           <div className="text-center">
-            <div className="font-display text-5xl text-white/20 md:text-7xl">30+</div>
-            <div className="mt-2 text-sm tracking-widest text-[var(--ink-dim)]">REPORT TEMPLATES</div>
+            <div className="font-display text-5xl text-white/20 md:text-7xl">24hr</div>
+            <div className="mt-2 text-sm tracking-widest text-[var(--ink-dim)]">EXPRESS TURNAROUND</div>
           </div>
         </div>
       </div>

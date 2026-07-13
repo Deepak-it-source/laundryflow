@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const CHANNELS = [
-  { icon: "📞", label: "Call us", value: "+91 98765 43210" },
-  { icon: "✉️", label: "Email", value: "hello@laundryflow.in" },
-  { icon: "📍", label: "Head office", value: "Koramangala, Bengaluru" },
+  { icon: "📞", label: "Call us", value: "+91 73540 03303", href: "tel:+917354003303" },
+  { icon: "📸", label: "Instagram", value: "@dhobi.housz", href: "https://www.instagram.com/dhobi.housz" },
+  { icon: "📍", label: "Visit us", value: "Shop No 3, Raheja Residency, Avanti Vihar, Raipur" },
 ];
 
 export default function Contact() {
@@ -21,11 +21,11 @@ export default function Contact() {
           >
             <p className="kicker mb-4">Contact</p>
             <h2 className="font-display text-4xl md:text-6xl">
-              Let&apos;s get your store <span className="text-gradient">flowing.</span>
+              Laundry day, <span className="text-gradient">off your plate.</span>
             </h2>
             <p className="mt-6 max-w-md leading-relaxed text-[var(--ink-dim)]">
-              Book a 20-minute demo and see your own store running on
-              LaundryFlow — orders, riders, billing and all.
+              Book a free home pickup — we collect, care and deliver your
+              garments back fresh, pressed and on time.
             </p>
 
             <div className="mt-10 space-y-5">
@@ -43,7 +43,13 @@ export default function Contact() {
                   </span>
                   <div>
                     <div className="text-xs tracking-wider text-[var(--ink-dim)]">{c.label}</div>
-                    <div className="text-sm font-semibold">{c.value}</div>
+                    {c.href ? (
+                      <a href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="text-sm font-semibold transition hover:text-[var(--accent)]">
+                        {c.value}
+                      </a>
+                    ) : (
+                      <div className="text-sm font-semibold">{c.value}</div>
+                    )}
                   </div>
                 </motion.div>
               ))}
@@ -77,18 +83,18 @@ export default function Contact() {
               </label>
             </div>
             <label className="mt-5 block">
-              <span className="mb-2 block text-xs tracking-wider text-[var(--ink-dim)]">STORE / BRAND NAME</span>
+              <span className="mb-2 block text-xs tracking-wider text-[var(--ink-dim)]">PICKUP ADDRESS</span>
               <input
                 type="text"
-                placeholder="e.g. Sparkle Dry Cleaners"
+                placeholder="House / flat, street, area"
                 className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none transition placeholder:text-white/25 focus:border-[var(--accent)]/60"
               />
             </label>
             <label className="mt-5 block">
-              <span className="mb-2 block text-xs tracking-wider text-[var(--ink-dim)]">MESSAGE</span>
+              <span className="mb-2 block text-xs tracking-wider text-[var(--ink-dim)]">WHAT DO YOU NEED?</span>
               <textarea
                 rows={4}
-                placeholder="Tell us about your store…"
+                placeholder="e.g. 5kg wash & iron + 2 suits dry cleaning…"
                 className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none transition placeholder:text-white/25 focus:border-[var(--accent)]/60"
               />
             </label>
@@ -96,7 +102,7 @@ export default function Contact() {
               type="submit"
               className="mt-7 w-full rounded-full bg-white py-3.5 text-sm font-bold text-black transition hover:bg-[var(--accent)]"
             >
-              Book a Free Demo
+              Book Free Pickup
             </button>
           </motion.form>
         </div>

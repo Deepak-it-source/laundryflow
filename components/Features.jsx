@@ -5,33 +5,33 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const FEATURES = [
   {
-    title: "Order Command Center",
-    desc: "Live pipeline of every garment — received, washing, ironing, ready, delivered. Nothing slips.",
-    icon: "🧺",
-  },
-  {
-    title: "Pickup & Delivery",
-    desc: "Route-optimised rider app with doorstep OTP confirmation and live customer tracking links.",
+    title: "Free Pickup & Delivery",
+    desc: "We come to your doorstep across Raipur — schedule a pickup on call and relax. Delivery is on us.",
     icon: "🛵",
   },
   {
-    title: "Smart Tagging",
-    desc: "QR garment tags eliminate mix-ups. Scan in, scan out — a full custody trail per item.",
+    title: "Tagged & Tracked",
+    desc: "Every garment is tagged the moment it arrives. No mix-ups, no missing clothes — ever.",
     icon: "🏷️",
   },
   {
-    title: "Multi-Store Cloud",
-    desc: "Run one outlet or fifty. Central pricing, central inventory, per-branch P&L in real time.",
-    icon: "🏬",
+    title: "24-Hour Express",
+    desc: "Need it tomorrow? Express wash, press and delivery within 24 hours on request.",
+    icon: "⚡",
   },
   {
-    title: "Staff & Shifts",
-    desc: "Attendance, productivity per presser, and incentive payouts computed automatically.",
+    title: "Fabric-Safe Chemistry",
+    desc: "pH-balanced detergents and solvent-safe dry cleaning matched to every fabric type.",
+    icon: "🧪",
+  },
+  {
+    title: "Boutique Finishing",
+    desc: "Steam-pressed collars, knife-edge creases and breathable garment covers on delivery.",
     icon: "👔",
   },
   {
-    title: "Customer Memory",
-    desc: "Fabric preferences, starch levels, allergy notes — remembered forever, applied every order.",
+    title: "Care That Remembers",
+    desc: "Starch level, fold style, fragrance preferences — noted once, applied to every order.",
     icon: "✨",
   },
 ];
@@ -75,12 +75,12 @@ export default function Features() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 max-w-2xl"
         >
-          <p className="kicker mb-4">Features</p>
+          <p className="kicker mb-4">Why Dhobi Housz</p>
           <h2 className="font-display text-4xl md:text-6xl">
-            Engineered like a <span className="text-gradient">machine room.</span>
+            Garment care, <span className="text-gradient">elevated.</span>
           </h2>
           <p className="mt-5 text-[var(--ink-dim)]">
-            Every module tuned for throughput — so your counters move as fast as your drums.
+            Six reasons Raipur trusts us with everything from daily wear to wedding wear.
           </p>
         </motion.div>
 

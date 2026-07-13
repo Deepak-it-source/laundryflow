@@ -125,22 +125,22 @@ export default function CinematicSequence() {
 
       {/* Overlay 1 — Hero */}
       <div ref={heroRef} className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center">
-        <p className="kicker mb-6">Cloud Laundry Operating System</p>
+        <p className="kicker mb-6">Premium Laundry & Dry Cleaning — Raipur</p>
         <h1 className="font-display max-w-5xl text-5xl leading-[1.05] md:text-8xl">
           From a <span className="text-gold italic">washing machine</span>
           <br />
-          to a <span className="text-gradient">laundry empire.</span>
+          to <span className="text-gradient">luxury laundry.</span>
         </h1>
         <p className="mt-8 max-w-xl text-base text-[var(--ink-dim)] md:text-lg">
-          LaundryFlow is the premium cloud platform that runs your entire
-          laundry business — services, orders, billing and reports.
+          Dhobi Housz brings boutique-grade garment care to your doorstep —
+          with free home pickup and delivery across Raipur.
         </p>
         <div className="mt-10 flex items-center gap-4">
-          <a href="#cta" className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition hover:bg-[var(--accent)]">
-            Start Free Trial
+          <a href="#contact" className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition hover:bg-[var(--accent)]">
+            Book Free Pickup
           </a>
-          <a href="#features" className="glass rounded-full px-7 py-3 text-sm font-medium transition hover:border-white/25">
-            Explore Platform
+          <a href="#services" className="glass rounded-full px-7 py-3 text-sm font-medium transition hover:border-white/25">
+            Our Services
           </a>
         </div>
         <div className="absolute bottom-8 flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] text-[var(--ink-dim)]">
@@ -157,9 +157,9 @@ export default function CinematicSequence() {
             Every great laundry brand starts with a single drum spinning.
           </h2>
           <p className="mt-5 text-[var(--ink-dim)]">
-            We watched neighbourhood laundries drown in paper tokens and missed
-            calls. LaundryFlow was born to give them the same machinery that
-            powers luxury hospitality — without the complexity.
+            Dhobi Housz began with one belief — Raipur deserves the same garment
+            care that powers luxury hospitality. Premium machines, fabric-safe
+            chemistry and an obsession with crisp finishing.
           </p>
         </div>
       </div>
@@ -167,14 +167,13 @@ export default function CinematicSequence() {
       {/* Overlay 3 — Product Story */}
       <div ref={productRef} className="invisible absolute inset-0 z-10 flex items-center justify-end px-6 md:px-24">
         <div className="glass-deep max-w-xl rounded-3xl p-8 md:p-12 text-right">
-          <p className="kicker mb-4">The Platform</p>
+          <p className="kicker mb-4">The Experience</p>
           <h2 className="font-display text-3xl leading-tight md:text-5xl">
-            One flow. Pickup to pressed, tracked to the second.
+            One flow. Pickup to pressed, delivered to your door.
           </h2>
           <p className="mt-5 text-[var(--ink-dim)]">
-            Orders stream in, machines stay busy, customers stay informed on
-            WhatsApp, and every rupee is reconciled — automatically, in the
-            cloud, on any device.
+            We pick up from your home, tag every garment, wash and press it to
+            boutique standards, and deliver it back — fresh, folded and on time.
           </p>
         </div>
       </div>

@@ -24,32 +24,32 @@ export default function FinalCta() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="kicker mb-6">Begin Your Empire</p>
+          <p className="kicker mb-6">Dhobi Housz — Premium Laundry</p>
           <h2 className="font-display text-5xl leading-[1.05] md:text-7xl">
-            The next <span className="text-gold italic">luxury laundry</span>
+            Your wardrobe deserves
             <br />
-            brand is <span className="text-gradient">yours.</span>
+            the <span className="text-gold italic">luxury laundry</span> <span className="text-gradient">treatment.</span>
           </h2>
           <p className="mx-auto mt-7 max-w-xl text-[var(--ink-dim)] md:text-lg">
-            Join 2,000+ laundry businesses running on LaundryFlow.
-            14-day free trial. No card required. Onboarding in one afternoon.
+            Free home pickup &amp; delivery across Raipur. Call us or book
+            online — your clothes come back fresh, pressed and on time.
           </p>
           <div className="mt-11 flex flex-wrap items-center justify-center gap-4">
             <motion.a
-              href="#"
+              href="tel:+917354003303"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="rounded-full bg-white px-9 py-4 text-sm font-bold text-black transition hover:bg-[var(--accent)]"
             >
-              Start Free Trial
+              📞 Call 73540 03303
             </motion.a>
             <motion.a
-              href="#"
+              href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="glass rounded-full px-9 py-4 text-sm font-semibold"
             >
-              Book a Demo
+              Book Free Pickup
             </motion.a>
           </div>
         </motion.div>
