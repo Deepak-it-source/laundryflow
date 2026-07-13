@@ -62,7 +62,7 @@ export default function Contact() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             onSubmit={(e) => e.preventDefault()}
-            className="glass-deep rounded-3xl p-8"
+            className="glass-deep rounded-3xl p-6 sm:p-8"
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block">

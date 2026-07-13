@@ -39,7 +39,7 @@ export default function FinalCta() {
               href="tel:+917354003303"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="rounded-full bg-white px-9 py-4 text-sm font-bold text-black transition hover:bg-[var(--accent)]"
+              className="w-full rounded-full bg-white px-9 py-4 text-center text-sm font-bold text-black transition hover:bg-[var(--accent)] sm:w-auto"
             >
               📞 Call 73540 03303
             </motion.a>
@@ -47,7 +47,7 @@ export default function FinalCta() {
               href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="glass rounded-full px-9 py-4 text-sm font-semibold"
+              className="w-full glass rounded-full px-9 py-4 text-center text-sm font-semibold sm:w-auto"
             >
               Book Free Pickup
             </motion.a>
