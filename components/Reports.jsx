@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -41,17 +42,27 @@ export default function Reports() {
 
   return (
     <section ref={sectionRef} id="reports" className="relative h-screen overflow-hidden">
-      <div className="absolute left-6 top-16 z-10 md:left-24 md:top-24">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute left-6 top-16 z-10 md:left-24 md:top-24"
+      >
         <p className="kicker mb-3">Our Process</p>
         <h2 className="font-display text-3xl md:text-5xl">
           From pickup to <span className="text-gradient">perfection.</span>
         </h2>
-      </div>
+      </motion.div>
 
       <div ref={trackRef} className="flex h-full items-center gap-8 pl-6 pr-[10vw] pt-24 md:pl-24">
-        {CARDS.map((c) => (
-          <article
+        {CARDS.map((c, i) => (
+          <motion.article
             key={c.title}
+            initial={{ opacity: 0, y: 60, scale: 0.96 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ delay: i * 0.08, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="glass-deep group relative h-[52vh] w-[78vw] shrink-0 overflow-hidden rounded-3xl sm:w-[46vw] lg:w-[30vw]"
           >
             <img
@@ -65,13 +76,19 @@ export default function Reports() {
               <h3 className="font-display text-2xl">{c.title}</h3>
               <p className="mt-2 text-sm text-[var(--ink-dim)]">{c.desc}</p>
             </div>
-          </article>
+          </motion.article>
         ))}
         <div className="flex h-[52vh] w-[60vw] shrink-0 items-center justify-center sm:w-[30vw]">
-          <div className="text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="text-center"
+          >
             <div className="font-display text-5xl text-white/20 md:text-7xl">24hr</div>
             <div className="mt-2 text-sm tracking-widest text-[var(--ink-dim)]">EXPRESS TURNAROUND</div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
