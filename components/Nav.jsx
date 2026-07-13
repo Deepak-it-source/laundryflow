@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   ["About", "#about"],
@@ -26,9 +27,9 @@ export default function Nav() {
         <a href="#hero" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           {/* House-roof logo mark */}
           <svg viewBox="0 0 32 32" className="h-8 w-8" aria-hidden>
-            <path d="M16 3 2 14h5v13h18V14h5L16 3z" fill="none" stroke="white" strokeWidth="2" strokeLinejoin="round" />
-            <circle cx="16" cy="19" r="4.5" fill="none" stroke="white" strokeWidth="1.6" />
-            <circle cx="16" cy="19" r="1.6" fill="white" />
+            <path d="M16 3 2 14h5v13h18V14h5L16 3z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+            <circle cx="16" cy="19" r="4.5" fill="none" stroke="currentColor" strokeWidth="1.6" />
+            <circle cx="16" cy="19" r="1.6" fill="currentColor" />
           </svg>
           <span className="leading-tight">
             <span className="font-display block whitespace-nowrap text-sm tracking-[0.14em] md:text-base md:tracking-[0.18em]">DHOBI HOUSZ</span>
@@ -45,6 +46,7 @@ export default function Nav() {
         </div>
 
         <div className="flex items-center gap-2.5">
+          <ThemeToggle />
           <a
             href="#contact"
             onClick={() => setOpen(false)}
