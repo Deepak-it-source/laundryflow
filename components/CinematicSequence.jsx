@@ -124,26 +124,27 @@ export default function CinematicSequence() {
       )}
 
       {/* Overlay 1 — Hero */}
-      <div ref={heroRef} className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center">
-        <p className="kicker mb-6">Premium Laundry & Dry Cleaning — Raipur</p>
-        <h1 className="font-display max-w-5xl text-5xl leading-[1.05] md:text-8xl">
-          From a <span className="text-gold italic">washing machine</span>
-          <br />
-          to <span className="text-gradient">luxury laundry.</span>
-        </h1>
-        <p className="mt-8 max-w-xl text-base text-[var(--ink-dim)] md:text-lg">
-          Dhobi Housz brings boutique-grade garment care to your doorstep —
-          with free home pickup and delivery across Raipur.
-        </p>
-        <div className="mt-10 flex items-center gap-4">
-          <a href="#contact" className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition hover:bg-[var(--accent)]">
-            Book Free Pickup
-          </a>
-          <a href="#services" className="glass rounded-full px-7 py-3 text-sm font-medium transition hover:border-white/25">
-            Our Services
-          </a>
+      <div ref={heroRef} className="absolute inset-0 z-10 flex flex-col items-start justify-center px-6 text-left md:px-24">
+        <div className="max-w-md">
+          <p className="kicker mb-5">Premium Laundry & Dry Cleaning — Raipur</p>
+          <h1 className="font-display text-3xl leading-[1.15] md:text-5xl">
+            From a <span className="text-gold italic">washing machine</span> to{" "}
+            <span className="text-gradient">luxury laundry.</span>
+          </h1>
+          <p className="mt-6 text-sm text-[var(--ink-dim)] md:text-base">
+            Dhobi Housz brings boutique-grade garment care to your doorstep —
+            with free home pickup and delivery across Raipur.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#contact" className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition hover:bg-[var(--accent)]">
+              Book Free Pickup
+            </a>
+            <a href="#services" className="glass rounded-full px-7 py-3 text-sm font-medium transition hover:border-white/25">
+              Our Services
+            </a>
+          </div>
         </div>
-        <div className="absolute bottom-8 flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] text-[var(--ink-dim)]">
+        <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[10px] tracking-[0.3em] text-[var(--ink-dim)]">
           SCROLL TO EXPERIENCE
           <span className="block h-8 w-px animate-pulse bg-gradient-to-b from-white/60 to-transparent" />
         </div>
