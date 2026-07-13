@@ -16,18 +16,18 @@ const playfair = Playfair_Display({
 export const metadata = {
   title: "LaundryFlow — Premium Cloud Laundry Management Software",
   description:
-    "LaundryFlow is a premium cloud-based laundry management platform: order tracking, WhatsApp automation, smart billing, analytics and reports for modern laundry businesses.",
+    "LaundryFlow is a premium cloud-based laundry management platform: order tracking, services, smart billing and reports for modern laundry businesses.",
   keywords: [
     "laundry management software",
     "laundry POS",
     "dry cleaning software",
     "laundry billing",
-    "laundry analytics",
+    "laundry services",
   ],
   openGraph: {
     title: "LaundryFlow — Premium Cloud Laundry Management Software",
     description:
-      "From washing machine to luxury laundry empire. Orders, billing, WhatsApp automation and analytics in one cinematic platform.",
+      "From washing machine to luxury laundry empire. Services, orders, billing and reports in one cinematic platform.",
     type: "website",
   },
 };

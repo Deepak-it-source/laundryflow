@@ -133,7 +133,7 @@ export default function CinematicSequence() {
         </h1>
         <p className="mt-8 max-w-xl text-base text-[var(--ink-dim)] md:text-lg">
           LaundryFlow is the premium cloud platform that runs your entire
-          laundry business — orders, billing, WhatsApp and analytics.
+          laundry business — services, orders, billing and reports.
         </p>
         <div className="mt-10 flex items-center gap-4">
           <a href="#cta" className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition hover:bg-[var(--accent)]">

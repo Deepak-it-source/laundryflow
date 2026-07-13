@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 
 const LINKS = [
+  ["About", "#about"],
+  ["Services", "#services"],
   ["Features", "#features"],
-  ["Analytics", "#analytics"],
-  ["WhatsApp", "#whatsapp"],
-  ["Billing", "#billing"],
-  ["Reports", "#reports"],
+  ["Pricing", "#billing"],
+  ["Testimonials", "#testimonials"],
+  ["Contact", "#contact"],
 ];
 
 export default function Nav() {
